@@ -6,6 +6,7 @@
 
 - node v0.10.21
 - ruby 2.0.0p247
+- bundler 1.3.5
 
 ## Installation
 
