@@ -1,10 +1,11 @@
 /*global module:false*/
+
 var path = require('path')
 var assert = require('assert')
 
 module.exports = function(grunt) {
 
-  var pdir = 'projects';
+  var pdir = 'projects'
 
   /*
    * Returns the existing projects count.
@@ -45,7 +46,7 @@ module.exports = function(grunt) {
   /*
    * Default task.
    */
-  grunt.registerTask('project', 'Creates an project scaffolding', function (name) {
+  grunt.registerTask('project', 'Creates the scaffolding for a simple project.', function project (name) {
     var isDeleting = grunt.option('delete')
     var name = name || grunt.option('name')
 
@@ -60,5 +61,5 @@ module.exports = function(grunt) {
 
   })
 
-  grunt.registerTask('default', ['project']);
+  grunt.registerTask('default', ['project'])
 };
