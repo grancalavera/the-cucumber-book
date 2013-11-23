@@ -61,6 +61,4 @@ module.exports = function(grunt) {
   })
 
   grunt.registerTask('default', ['project']);
-  grunt.registerTask('test', ['project:one', 'project:two', 'project:three'])
-
 };
