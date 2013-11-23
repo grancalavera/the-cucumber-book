@@ -1,4 +1,4 @@
-Feature: Accounts
+Feature: Transfers
 
   Scenario: Transfer funds from savings into checking account
 
