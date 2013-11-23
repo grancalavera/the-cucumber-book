@@ -9,15 +9,15 @@
 
 ## Installation
 
-  bundle
-  npm install
+    bundle
+    npm install
 
 ## Creating a project
 
-  grunt --name=my_project
+    grunt --name=my_project
 
 ## Deleting a project
 
 Delete must be the last argument
 
-  grunt --name=my_project --delete
+    grunt --name=my_project --delete
