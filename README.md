@@ -1,9 +1,9 @@
 # The Cucumber Book
 
-[The Cucumber Book](http://pragprog.com/book/hwcuc/the-cucumber-book) from [The Pragmatic Bookshelf](http://pragprog.com).
-
 > Allows you to create simple projects that can be used along with
   *The Cucumber Book* to learn Cucumber.
+
+See [The Cucumber Book](http://pragprog.com/book/hwcuc/the-cucumber-book) from [The Pragmatic Bookshelf](http://pragprog.com).
 
 ## Dependencies
 
