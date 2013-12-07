@@ -1,15 +1,24 @@
 # Helper methods: to be mixed up with "World" later on
-module KnowsTheDomain
+module KnowsTheUserInterface
+  class UserInterface
+    include Capybara::DSL
+    def withdraw_from(account, amount)
+      Sinatra::Application.account = account
+      visit '/'
+      fill_in 'Amount', :with => amount
+      click_button 'Withdraw'
+    end
+  end
   def my_account
     @my_account ||= Account.new
   end
 
   def cash_slot
-    @cash_slot ||= CashSlot.new
+    Sinatra::Application.cash_slot
   end
 
   def teller
-    @teller ||= Teller.new(cash_slot)
+    @teller ||= UserInterface.new
   end
 end
 
@@ -20,4 +29,4 @@ end
 # of the scenario.
 # any instance variables set during one scenario will be destroyed along
 # with the world in which they were created when the scenario ends.
-World(KnowsTheDomain)
+World(KnowsTheUserInterface)
