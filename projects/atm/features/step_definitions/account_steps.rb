@@ -4,7 +4,7 @@ end
 
 And /^the balance of my account should be (#{CAPTURE_CASH_AMOUNT})$/ do |amount|
   eventually {
-    my_account.balance.should eq(amount),
+    my_account.reload.balance.should eq(amount),
       "Expected the balance to be #{amount} but it was #{my_account.balance}"
   }
 end

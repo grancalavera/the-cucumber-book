@@ -8,4 +8,5 @@ group :development do
   gem "rspec-expectations"
   gem "capybara"
   gem "launchy"
+  gem "database_cleaner"
 end
